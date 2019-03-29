@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemUpload"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:id="@+id/uploadProblemImageId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image_outline"/>
+            </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <Button
+                                android:onClick="uploadByCamera"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/camera"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+                            <TextView
+                                android:padding="6dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="From Camera"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <Button
+                                android:onClick="uploadByGallery"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/galley"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+                            <TextView
+                                android:padding="6dp"
+                                android:textSize="16dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="From Gallery"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <EditText
+                    android:id="@+id/typeOfProblemId"
+                    android:hint="Type of Problem"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <EditText
+                    android:id="@+id/problemDiscreptionId"
+                    android:hint="Problem description"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="text"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:id="@+id/problemLocationId"
+                    android:hint="Location"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="text"/>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:onClick="uploadProblem"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:text="Upload"
+                android:background="@drawable/text_view_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"/>
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "261801468415",
+    "firebase_url": "https://problemupload.firebaseio.com",
+    "project_id": "problemupload",
+    "storage_bucket": "problemupload.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261801468415:android:60667b476bf740e4",
+        "android_client_info": {
+          "package_name": "com.example.wahid.project1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261801468415-tkvemu2dqp3qc1j1fg1borr88fhs3l29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcJHxfg7mCm794CD3Nfa-jl0fMG8K5Ys8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

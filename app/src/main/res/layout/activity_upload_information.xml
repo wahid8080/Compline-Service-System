@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadInformation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_empty_icon"
+            android:onClick="GalleryFunction"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_userName_id"
+            android:layout_below="@id/imageId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:id="@+id/input_userName_id_SingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_phone_Id"
+            android:layout_below="@id/input_userName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:id="@+id/input_phone_Id_SingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_NID_Id"
+            android:layout_below="@id/input_phone_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_card_membership_black_24dp"
+                android:id="@+id/input_NID_Id_SingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="National ID Number"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_DateOfBirth_Id"
+            android:layout_below="@id/input_NID_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true">
+            <EditText
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_grid_on_black_24dp"
+                android:id="@+id/input_dateOfBirth_Id_SingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DD/MM/YY"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:onClick="registration"
+            android:layout_alignRight="@id/input_DateOfBirth_Id"
+            android:background="@drawable/text_view_background"
+            android:text="Go"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/input_DateOfBirth_Id"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Singup_button_id_in_singup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
